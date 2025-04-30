@@ -13,7 +13,11 @@ var (
 )
 
 func InitRedis(cfg config.RedisConfig) {
-	Rdb = redis.NewClient(&redis.Options{
+	opt := &redis.Options{
 		Addr: cfg.Addr,
-	})
+	}
+	if cfg.Password != "" {
+		opt.Password = cfg.Password
+	}
+	Rdb = redis.NewClient(opt)
 }

@@ -17,9 +17,10 @@ type DBConfig struct {
 }
 
 type RedisConfig struct {
-	Addr    string `yaml:"addr"`
-	PoolKey string `yaml:"poolKey"`
-	SetKey  string `yaml:"setKey"`
+	Addr     string `yaml:"addr"`
+	Password string `yaml:"password"`
+	PoolKey  string `yaml:"poolKey"`
+	SetKey   string `yaml:"setKey"`
 }
 
 type CheckConfig struct {
