@@ -19,6 +19,7 @@ type DBConfig struct {
 type RedisConfig struct {
 	Addr     string `yaml:"addr"`
 	Password string `yaml:"password"`
+	DB       int    `yaml:"db"`
 	PoolKey  string `yaml:"poolKey"`
 	SetKey   string `yaml:"setKey"`
 }

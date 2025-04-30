@@ -15,9 +15,11 @@ var (
 func InitRedis(cfg config.RedisConfig) {
 	opt := &redis.Options{
 		Addr: cfg.Addr,
+		DB:   cfg.DB, // 新增数据库选择
 	}
 	if cfg.Password != "" {
 		opt.Password = cfg.Password
 	}
+
 	Rdb = redis.NewClient(opt)
 }
