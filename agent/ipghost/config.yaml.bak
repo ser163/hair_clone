@@ -1,0 +1,18 @@
+agent_name: "scdn.io"
+# Proxy settings
+proxy_api: "https://proxy.scdn.io/api/get_proxy.php?protocol=http&count=3"
+target_url: "https://www.baidu.com"
+
+# Timeout settings (in seconds)
+ping_timeout: 2s
+port_timeout: 3s
+http_timeout: 5s
+check_interval: 5s
+
+# Database configuration
+database:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: "xxxxxxxxxxxxxxxxxx"
+  dbname: "ip_pool"

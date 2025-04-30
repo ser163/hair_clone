@@ -1,0 +1,12 @@
+database:
+  host: "127.0.0.1"
+  port: 3306
+  username: "root"
+  password: "xxxxxxx"
+  dbname: "ip_pool"
+  charset: "utf8mb4"
+
+check:
+  portTimeout: 3s
+  httpTimeout: 5s
+  targetURL: "http://www.baidu.com"

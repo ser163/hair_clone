@@ -1,0 +1,7 @@
+go 1.24.1
+
+use (
+	./agent/ipghost
+	./ip_mole
+	./ip_pool_chick
+)
