@@ -108,6 +108,8 @@ func ValidatorLoop(db *sql.DB, conf config.Config) {
 				if err != nil {
 					fmt.Println("更新成功状态失败:", err)
 				}
+
+				fmt.Sprintf("剔除一个IP: %s \n", ip)
 			}
 		}
 	}
